@@ -1,9 +1,9 @@
-#!/bin/bash
+﻿#!/bin/bash
 
 set -eu
 
 # Update version number as a string when a new binary is available
-JDK_CURRENT_VERSION="142"
+JDK_CURRENT_VERSION="152"
 
 # Binary name and download path composed with these values and current version
 JDK_NAME_GENERIC="jigsaw-jdk-9-ea+"
