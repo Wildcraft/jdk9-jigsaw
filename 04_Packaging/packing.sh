@@ -17,8 +17,8 @@ tree mlib
 
 echo
 echo "Printing module description for org.astro"
-jar --print-module-descriptor --file=mlib/org.astro@1.0.jar
+jar --describe-module --file=mlib/org.astro@1.0.jar
 
 echo
 echo "Printing module description for com.greetings"
-jar --print-module-descriptor --file=mlib/com.greetings.jar
+jar --describe-module --file=mlib/com.greetings.jar

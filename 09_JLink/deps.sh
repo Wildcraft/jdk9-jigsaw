@@ -1,0 +1,1 @@
+executable/bin/java --list-modules

@@ -1,13 +1,13 @@
-﻿#!/bin/bash
+#!/bin/bash
 
 set -eu
 
 # Update version number as a string when a new binary is available
-JDK_CURRENT_VERSION="152"
+JDK_CURRENT_VERSION="168"
 
 # Binary name and download path composed with these values and current version
 JDK_NAME_GENERIC="jigsaw-jdk-9-ea+"
-JDK_NAME_LINUX="_linux-x64_bin.tar.gz"
+JDK_NAME_LINUX="_windows-x64_bin.zip"
 JDK_NAME_OSX="_osx-x64_bin.tar.gz"
 
 JDK_DESTINATION=$(echo ```pwd```)
@@ -59,6 +59,8 @@ function checkIf_JAVA_HOME_IsSet() {
 		echo -e "         export JAVA_HOME=$JDK_HOME_OS_SPECIFIC"
 		echo ""
 		echo "If needed add this to your .bashrc or .bash_profile settings."
+		#export JAVA_HOME=$JDK_HOME_OS_SPECIFIC
+		echo "export done"
 	else
 		echo -e "JAVA_HOME points at $JAVA_HOME"
 	fi
@@ -74,6 +76,8 @@ function checkIf_PATH_IsSet() {
 		echo -e "         export PATH=$JDK_HOME_OS_SPECIFIC_BIN:\$PATH"
 		echo ""
 		echo "If needed add this to your .bashrc or .bash_profile settings."
+		#export PATH=$JDK_HOME_OS_SPECIFIC_BIN:\$PATH
+		echo "export done"
 	else
 		echo -e "PATH contains $JDK_HOME_OS_SPECIFIC_BIN"
 	fi
